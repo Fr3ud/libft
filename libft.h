@@ -44,6 +44,7 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_bye(char *error);
 int					ft_hex_to_int(char *hex);
+int					get_next_line(const int fd, char **line);
 char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strnstr(const char *haystack,
 		const char *needle, size_t len);

@@ -68,6 +68,7 @@ SRC=src/ft_atoi.c \
 	src/ft_swap.c \
 	src/ft_bye.c \
 	src/ft_hex_to_int.c \
+	src/get_next_line.c \
 
 OBJ		=	$(patsubst src/%.c,obj/%.o,$(SRC))
 
