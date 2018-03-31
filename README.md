@@ -26,33 +26,33 @@ As you can see from the [Project instructions][1], there are 4 sections:
 
 Libc functions | Additional functions | Bonus Functions | Personal Functions
 :----------- | :-----------: | :-----------: | -----------:
-memset		| ft_memalloc	| ft_lstnew		| ft_iswhitespace 
-bzero		| ft_memdel		| ft_lstdelone	| ft_w_count 
+memset		| ft_memalloc	| ft_lstnew		| ft_iswhitespace
+bzero		| ft_memdel		| ft_lstdelone	| ft_w_count
 memcpy		| ft_strnew		| ft_lstdel		| ft_swap    
 memccpy		| ft_strdel		| ft_lstadd		| ft_hex_to_int    
 memmove		| ft_strclr		| ft_lstiter	| ft_pow    
 memchr		| ft_striter	| ft_lstmap		| ft_bye
-memcmp		| ft_striteri	|				| 
-strlen		| ft_strmap		|				| 
-strdup		| ft_strmapi	|				| 
-strcpy		| ft_strequ		|				| 
-strncpy		| ft_strnequ	|			| 
-strcat		| ft_strsub		| | 
-strlcat		| ft_strjoin	| | 
-strchr		| ft_strtrim	| | 
-strrchr		| ft_strsplit	| | 
-strstr		| ft_itoa		| | 
-strnstr		| ft_putchar	| | 
-strcmp		| ft_putstr		| | 
-strncmp		| ft_putendl	| | 
-atoi		| ft_putnbr		| | 
-isalpha		| ft_putchar_fd	| | 
-isdigit		| ft_putstr_fd	| | 
-isalnum		| ft_putendl_fd	| | 
-isascii		| ft_putnbr_fd	| | 
-isprint		|| | 
-toupper		| | | 
-tolower		| | | 
+memcmp		| ft_striteri	|				| get_next_line
+strlen		| ft_strmap		|				|
+strdup		| ft_strmapi	|				|
+strcpy		| ft_strequ		|				|
+strncpy		| ft_strnequ	|			|
+strcat		| ft_strsub		| |
+strlcat		| ft_strjoin	| |
+strchr		| ft_strtrim	| |
+strrchr		| ft_strsplit	| |
+strstr		| ft_itoa		| |
+strnstr		| ft_putchar	| |
+strcmp		| ft_putstr		| |
+strncmp		| ft_putendl	| |
+atoi		| ft_putnbr		| |
+isalpha		| ft_putchar_fd	| |
+isdigit		| ft_putstr_fd	| |
+isalnum		| ft_putendl_fd	| |
+isascii		| ft_putnbr_fd	| |
+isprint		|| |
+toupper		| | |
+tolower		| | |
 
 
 Notes:
@@ -78,9 +78,9 @@ Now to clean up (removing the .o files), call `make clean`
 
 ### How do I use the library?
 
-I added an example file called **example.c**, it's using the function **ft_putstr** to print "DON'T PANIC" to the screen. 
+I added an example file called **example.c**, it's using the function **ft_putstr** to print "DON'T PANIC" to the screen.
 
-If you try to compile it with gcc using `gcc example.c` you will get an *undefined symbol* error for ft_putstr. 
+If you try to compile it with gcc using `gcc example.c` you will get an *undefined symbol* error for ft_putstr.
 
 You have to tell the file where your library resides and which library it is using:
 
@@ -98,14 +98,14 @@ To test the code we're going to be using @alelievr's [Libft Unit Test][4]. There
 #### 1. To test the code in this repo
 
 1. Clone this repo and cd into it, make sure it's called `libft`:
-		
+
 		git clone https://github.com/Fr3ud/libft
 		cd libft/
 2. Run Make so you can build the library:
-		
+
 		make
 3. Go back to the root directory and download @alelievr's Libft Unit Test:
-		
+
 		cd ..
 		git clone https://github.com/alelievr/libft-unit-test
 4. Go into the test folder and run the test:
